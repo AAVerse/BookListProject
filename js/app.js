@@ -16,7 +16,7 @@ UI.prototype.addBookToList= function(book){
    `<td> ${book.title}</td>
    <td> ${book.author}</td>
    <td> ${book.isbn}</td>
-   <td><a href='#' class="delete">X</a></td>
+   <td><a href='#' class="delete"><i class="fa fa-trash-o"></i></a></td>
    `;
 list.appendChild(row);
 
@@ -38,8 +38,8 @@ UI.prototype.showAlert=function(message, className){
 }
 // Delete Book 
 UI.prototype.deleteBook= function(target){
-    if(target.className==="delete"){
-        target.parentElement.parentElement.remove();
+    if(target.parentElement.className==="delete"){
+        target.parentElement.parentElement.parentElement.remove();
     }
 }
 
