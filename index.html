@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .success{
             color: white;
@@ -18,25 +20,36 @@
             padding: 5px;
             margin: 5px 0 15px 0;
             background: rgb(197, 41, 41);
-
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <div class="waveWrapper waveAnimation" style="position: fixed; top: 0; left: 0; z-index: -1;">
+        <div class="waveWrapperInner bgTop">
+            <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+    </div>
     <div class="container">
-        <h1>Book List </h1> 
+        <h1>The Book List </h1> 
     <form id="book-form">
         <div>
             <label for="title">Title</label>
-            <input type="text" id="title" class="u-full-width">
+            <input type="text" id="title" class="u-full-width" placeholder="Enter your title">
         </div>
         <div>
             <label for="author">Author</label>
-            <input type="text" id="author" class="u-full-width">
+            <input type="text" id="author" class="u-full-width" placeholder="Enter Author's name">
         </div>
         <div>
             <label for="isbn">ISBN</label>
-            <input type="text" id="isbn" class="u-full-width">
+            <input type="text" id="isbn" class="u-full-width" placeholder="Enter ISBN number">
         </div>
         <div>
            <input type="submit" class="u-full-width" id="btn"> 
